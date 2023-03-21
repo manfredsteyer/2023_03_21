@@ -71,7 +71,10 @@
               },
               {
                 "sourceTag": "type:ui",
-                "onlyDependOnLibsWithTags": ["type:domain-logic", "type:util"]
+                "onlyDependOnLibsWithTags": [
+                  "type:domain-logic", 
+                  "type:util"
+                ]
               },
               {
                 "sourceTag": "type:domain-logic",
@@ -92,6 +95,10 @@
               {
                 "sourceTag": "domain:checkin",
                 "onlyDependOnLibsWithTags": ["domain:checkin", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:luggage",
+                "onlyDependOnLibsWithTags": ["domain:luggage", "domain:shared"]
               }
             ]
           }

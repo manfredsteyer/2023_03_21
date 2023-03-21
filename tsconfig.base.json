@@ -1,0 +1,53 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": ["ES2022", "dom"],
+    "paths": {
+      "@flight-demo/checkin/domain": ["libs/checkin/domain/src/index.ts"],
+      "@flight-demo/checkin/feature-manage": [
+        "libs/checkin/feature-manage/src/index.ts"
+      ],
+      "@flight-demo/shared/ui-common": [
+        "libs/shared/ui-common/src/lib/index.ts"
+      ],
+      "@flight-demo/shared/util-config": [
+        "libs/shared/util-config/src/lib/index.ts"
+      ],
+      "@flight-demo/shared/util-validation": [
+        "libs/shared/util-validation/src/lib/index.ts"
+      ],
+      "@flight-demo/tickets/domain": ["libs/tickets/domain/src/lib/index.ts"],
+      "@flight-demo/tickets/feature-booking": [
+        "libs/tickets/feature-booking/src/lib/index.ts"
+      ],
+      "@flight-demo/tickets/feature-next-flights": [
+        "libs/tickets/feature-next-flights/src/lib/index.ts"
+      ]
+    },
+    "rootDir": "."
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
+  "exclude": ["node_modules", "tmp"]
+}
